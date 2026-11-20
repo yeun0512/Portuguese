@@ -1,4 +1,4 @@
-# Chapter 08 확장 실습 답안 템플릿
+# 11/20 완전과거, 불완전과거
 
 > **과제:** JOIN과 집계로 서비스 질문에 답하기  
 > **사용 방법:** 이 파일을 내려받아 본인의 GitHub 저장소에 `chapter08_answer.md`라는 이름으로 저장한 뒤 실습하면서 바로 작성합니다.  
@@ -18,7 +18,7 @@ GitHub 계정 또는 별칭:
 
 ---
 
-# 1. Chapter 07 기준 상태 확인
+# 1. 완전 과거
 
 다음을 실행합니다.
 
@@ -26,105 +26,39 @@ GitHub 계정 또는 별칭:
 code/chapter08/00_check_course_project.sql
 ```
 
-## 1-1. 사전 검사 결과
+## 1-1. 기본 변화형
+
 
 ```text
-검증 메시지:
-
-students 행 수:
-instructors 행 수:
-courses 행 수:
-enrollments 행 수:
-
-전체 신청 건수:
-전체 recorded_amount:
-활성 신청 건수:
-활성 recorded_amount:
-취소 제외 신청 건수:
-취소 제외 recorded_amount:
+code/chapter08/00_check_course_project.sql
 ```
-
-기준값:
-
-```text
-students = 3
-instructors = 2
-courses = 3
-enrollments = 5
-
-전체 = 5 / 590000
-활성 = 3 / 340000
-취소 제외 = 4 / 440000
-```
-
-### 기준값이 다르면 그대로 진행하면 안 되는 이유
-
-```text
-
-```
-
-### 증거 화면
-
-권장 경로:
-
-```text
-assignments/chapter08/images/step01_prerequisite.png
-```
-
-`여기에 사전 검사 통과 화면을 삽입하세요.`
-
 ---
 
-# 2. 업무 질문을 SQL보다 먼저 정의하기
+# 2. 불완전 과거 
 
 다음 세 질문을 각각 SQL 작성 전에 먼저 정의합니다.
 
-## 질문 A
+## 기본 변화형
 
 ```text
-업무 질문:
-결과 한 행의 의미:
-포함 상태:
-제외 상태:
-JOIN할 테이블:
-JOIN 경로:
-INNER JOIN / LEFT JOIN 선택:
-그 이유:
-예상 행 수:
+
+
 ```
 
-## 질문 B
+## 불규칙 변화형
 
 ```text
-업무 질문:
-결과 한 행의 의미:
-포함 상태:
-제외 상태:
-JOIN할 테이블:
-JOIN 경로:
-집계 대상:
-예상 결과:
+
+
+
 ```
-
-## 질문 C
-
-```text
-업무 질문:
-결과 한 행의 의미:
-포함 상태:
-제외 상태:
-0건인 부모도 보여야 하는가:
-NULL을 어떻게 해석할 것인가:
-예상 결과:
-```
-
 ---
 
-# 3. INNER JOIN과 다중 JOIN
+# 3. Exercicio 
 
-## 3-1. 신청 한 건마다 학생 이름과 강의 제목 조회
+## 3-1. 새 그림 묘사 
 
-실행 전 예상:
+단어:
 
 ```text
 결과 한 행 =
@@ -132,18 +66,18 @@ NULL을 어떻게 해석할 것인가:
 JOIN 경로 =
 ```
 
-내가 실행한 SQL:
 
-```sql
 
-```
+| 문장 번호 | 문장 | 동사원형 | 시제 선택 | 이유 | 주의 사항 | 기타 | 
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | No domingo passado, fez(fazi) frio e nevou(nevava) muito.  | faz, nevar | 완전, 불완전 |  |  |  |
+| 2 |  |  |  |  |  |  |
+| 3 |  |  |  |  |  |  |
 
-실제 결과:
 
-```text
-실제 행 수:
-예상과 일치 여부:
-```
+
+
+
 
 ### 학생 이름이 여러 번 보이는 것이 중복 오류가 아닐 수 있는 이유
 
@@ -180,11 +114,12 @@ assignments/chapter08/images/step03_inner_join.png
 
 ---
 
-# 4. LEFT JOIN과 0건 표현
+# 4. Expressao
 
-## 4-1. 강의별 취소 제외 신청 수
+## 4-1. 취미 표현 
 
-신청이 없는 강의도 결과에 남도록 작성합니다.
+jogar + 놀이/스포츠
+tocar + 
 
 실행 전:
 
